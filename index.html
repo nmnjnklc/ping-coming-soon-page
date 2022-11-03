@@ -21,6 +21,8 @@
     />
 
     <title>Frontend Mentor | Ping coming soon page</title>
+
+    <script defer src="./script.js"></script>
   </head>
   <body>
     <main>
@@ -31,9 +33,10 @@
         <div class="content">
           <h1>We are launching <span>soon!</span></h1>
           <p>Subscribe and get notified</p>
-          <form>
-            <input type="email" placeholder="Your email address..."/>
-            <button>Notify Me</button>
+          <form id="form">
+            <input id="inputEmail" type="email" class="" placeholder="Your email address..."/>
+            <p id="error-msg" class="error-message hide"><i>Please provide a valid email address</i></p>
+            <a id="submit" type="submit" class="">Notify Me</a>
           </form>
         </div>
         <div class="illustration-container">

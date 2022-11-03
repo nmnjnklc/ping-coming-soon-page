@@ -73,29 +73,36 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0.625rem;
+    position: relative;
 }
 
 .content form * {
     padding: 0.875rem 1.875rem;
-    font-size: .8rem;
     border-radius: 99px;
 }
 
 .content form input {
     border: 1px solid #c2d3ff;
+    font-size: .8rem;
 }
 
 .content form input::placeholder {
     color: #c2d3ff;
 }
 
-.content form button {
+.content form a {
     cursor: pointer;
     border: none;
+    text-align: center;
+    font-size: .8rem;
     font-weight: 600;
     box-shadow: 0px 10px 15px -3px #4f7df38e;
     background-color: #4f7df3;
     color: #fff;
+}
+
+.content form a:hover {
+    background-color: #4f7df3de;
 }
 
 .illustration-container {
@@ -152,6 +159,28 @@ main, footer {
     max-width: 23.4375rem
 }
 
+.hide {
+    display: none;
+}
+
+.invalid {
+    border: 1px solid #ff5263 !important;
+}
+
+.mt {
+    margin-top: 2rem;
+}
+
+p.error-message {
+    color: #ff5263;
+    position: absolute;
+    padding: 0;
+    font-size: .7rem;
+    font-weight: 600;
+    top: 8vh;
+    left: 3.5vw;
+}
+
 @media only screen and (min-width: 1440px) {
     body {
         width: 100vw;
@@ -174,6 +203,9 @@ main, footer {
     .content form {
         flex-direction: row;
     }
+    .content form * {
+        padding: 1rem 1.875rem;
+    }
     .content form input {
         width: 70%;
     }
@@ -185,5 +217,13 @@ main, footer {
     }
     footer p {
         font-size: 0.7rem;
+    }
+    p.error-message {
+        font-size: .7rem;
+        top: 5.5vh;
+        left: -2vw;
+    }
+    .mt {
+        margin-top: 0;
     }
 }
