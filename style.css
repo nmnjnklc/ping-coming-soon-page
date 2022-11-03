@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    height: fit-content;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.75rem;
+}
+
+.logo-container {
+    padding: 2.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img.logo {
+    width: 66%;
+}
+
+.content {
+    width: 100%;
+    padding: 0 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.content h1{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #969696;
+}
+
+.content h1 span{
+    font-weight: 700;
+    color: #151f29;
+}
+
+.content p {
+    font-size: .8rem;
+    font-weight: 300;
+    color: #151f29;
+}
+
+.content form {
+    width: 100%;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.content form * {
+    padding: 0.875rem 1.875rem;
+    font-size: .8rem;
+    border-radius: 99px;
+}
+
+.content form input {
+    border: 1px solid #c2d3ff;
+}
+
+.content form input::placeholder {
+    color: #c2d3ff;
+}
+
+.content form button {
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    box-shadow: 0px 10px 15px -3px #4f7df38e;
+    background-color: #4f7df3;
+    color: #fff;
+}
+
+.illustration-container {
+    width: 100%;
+    padding: 4.5rem 0;
+}
+
+.illustration-container img.illustration {
+    width: 100%;
+}
+
+.social-media-icons {
+    width: 100%;
+    display: flex;
+    padding-top: 1.5rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.875rem;
+}
+
+.social-media-icons .icon {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 99px;
+    border: 1px solid #c2d3ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-icons .icon img {
+    max-width: 1rem;
+    max-height: 1rem;
+}
+
+footer p {
+    padding: 1.5rem;
+    font-size: 0.625rem;
+    font-weight: 300;
+    color: #969696;
+}
+
+main, footer {
+    max-width: 23.4375rem
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+        width: 100vw;
+    }
+    main, footer {
+        max-width: 40rem
+    }
+    .logo-container img.logo {
+        width: 100%;
+    }
+    .content {
+        padding: 0 0;
+    }
+    .content h1{
+        font-size: 2.5rem;
+    }
+    .content p {
+        font-size: 1rem;
+    }
+    .content form {
+        flex-direction: row;
+    }
+    .content form input {
+        width: 70%;
+    }
+    .content form button {
+        width: 30%;
+    }
+    .illustration-container {
+        padding: 5rem 0;
+    }
+    footer p {
+        font-size: 0.7rem;
+    }
+}
