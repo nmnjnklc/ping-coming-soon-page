@@ -81,8 +81,8 @@ main {
     border-radius: 99px;
 }
 
-.content form input {
-    border: 1px solid #c2d3ff;
+.content form input, .content form input:focus, .content form input:active {
+    border: 1px solid #c2d3ff !important;
     font-size: .8rem;
 }
 
